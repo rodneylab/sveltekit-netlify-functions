@@ -1,5 +1,5 @@
 /** @type {import('@sveltejs/kit').Config} */
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-netlify';
 import { imagetools } from 'vite-imagetools';
 import { mdsvex } from 'mdsvex';
 import preprocess from 'svelte-preprocess';
