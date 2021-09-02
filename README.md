@@ -17,4 +17,4 @@ Test the two functions:
 
 <a aria-label="Test client I P function" href="https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/client-ip" target="_blank" rel="nofollow noopener noreferrer">https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/client-ip</a>
 
-<a aria-label="Test Good Morning function" href="https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/good-morning" target="_blank" rel="nofollow noopener noreferrer">https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/client-ip</a>
+<a aria-label="Test Good Morning function" href="https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/good-morning" target="_blank" rel="nofollow noopener noreferrer">https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/good-morning</a>
