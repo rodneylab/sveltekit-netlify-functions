@@ -24,9 +24,8 @@
     const res = await fetch(url);
 
     if (res.ok) {
-      // const { post } = await res.json();
       return {
-        props: {...(await response.json()), slug },
+        props: {...(await res.json()), slug },
       };
     }
 
