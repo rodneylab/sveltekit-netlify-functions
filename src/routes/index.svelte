@@ -1,15 +1,13 @@
 <script context="module">
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
+  export const prerender = true;
+
   export async function load({ fetch }) {
     const url = `./index.json`;
     const response = await fetch(url);
 
     if (response.ok) {
-      const { posts } = await response.json();
       return {
-        props: { posts },
+        props: { ...(await response.json()) },
       };
     }
 

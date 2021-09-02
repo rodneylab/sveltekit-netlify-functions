@@ -1,7 +1,5 @@
 <script context="module">
-  /**
-   * @type {import('@sveltejs/kit').Load}
-   */
+  export const prerender = true;
   export async function load({ page, fetch, context }) {
     const { path } = page;
     const { slug } = page.params;
