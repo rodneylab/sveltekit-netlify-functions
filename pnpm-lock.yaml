@@ -5,6 +5,7 @@ specifiers:
   '@fontsource/lora': ^4.5.0
   '@fontsource/source-sans-pro': ^4.5.0
   '@imgix/js-core': ^3.2.1
+  '@sveltejs/adapter-netlify': ^1.0.0-next.29
   '@sveltejs/adapter-static': ^1.0.0-next.17
   '@sveltejs/kit': ^1.0.0-next.159
   dayjs: ^1.10.6
@@ -34,6 +35,7 @@ specifiers:
   vite-imagetools: ^3.6.8
 
 dependencies:
+  '@sveltejs/adapter-netlify': 1.0.0-next.29
   front-matter: 4.0.2
 
 devDependencies:
@@ -333,8 +335,12 @@ packages:
     resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
     dev: true
 
+  /@iarna/toml/2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: false
+
   /@imgix/js-core/3.2.1:
-    resolution: {integrity: sha512-Evw7rDybGuOH8sU39JIZUmDue1IjV6SXqrv4f52rb9SzIow/uV+L7ch+3dCFiFTU3YXg5qodP6snIzXCj3gZvQ==}
+    resolution: {integrity: sha512-Evw7rDybGuOH8sU39JIZUmDue1IjV6SXqrv4f52rb9SzIow/uV+L7ch+3dCFiFTU3YXg5qodP6snIzXCj3gZvQ==, tarball: '@imgix/js-core/-/js-core-3.2.1.tgz'}
     dependencies:
       js-base64: 3.6.1
       md5: 2.3.0
@@ -395,6 +401,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@sveltejs/adapter-netlify/1.0.0-next.29:
+    resolution: {integrity: sha512-CJAdDv7p1brGKQfMPmsgDeBPygstmuN9VYO+x+nV3DfMTPg7WYwDuZ8OwSjCHE4tvsWARHKZGvsSLe1lz0T5ug==}
+    dependencies:
+      '@iarna/toml': 2.2.5
+      esbuild: 0.12.24
+    dev: false
 
   /@sveltejs/adapter-static/1.0.0-next.17:
     resolution: {integrity: sha512-RKYNkQxtsMgt0wD8PhfXR1hGT1Tmq1E5eZeTr1KxIerczITRnWVT8LElfu/9Kusv44yYlyQtNc1mLoYqgloOQw==}
@@ -983,7 +996,6 @@ packages:
     resolution: {integrity: sha512-C0ibY+HsXzYB6L/pLWEiWjMpghKsIc58Q5yumARwBQsHl9DXPakW+5NI/Y9w4YXiz0PEP6XTGTT/OV4Nnsmb4A==}
     hasBin: true
     requiresBuild: true
-    dev: true
 
   /escalade/3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
