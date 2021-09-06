@@ -33,8 +33,11 @@
 >
   <div class="content">
     <h3>
-      <a aria-label={`Open ${postTitle} blog post`} aria-describedby={idString} href={`/${slug}/`}
-        >{postTitle}</a
+      <a
+        aria-label={`Open ${postTitle} blog post`}
+        aria-describedby={idString}
+        sveltekit:prefetch
+        href={`/${slug}/`}>{postTitle}</a
       >
     </h3>
     <p>{dateString}</p>
