@@ -13,6 +13,10 @@ categories: ''
 tags: ''
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import ExternalLink from '$lib/components/ExternalLink.svelte';
 </script>
