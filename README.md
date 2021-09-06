@@ -11,7 +11,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/258c21cc-4a2c-4add-8b58-42128203863b/deploy-status)](https://app.netlify.com/sites/serene-turing-050367/deploys)
 
-# sveltekit-nextgen-background
+# sveltekit-netlify-functions
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-netlify-functions)
 
