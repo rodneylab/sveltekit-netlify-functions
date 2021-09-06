@@ -11,7 +11,7 @@
 
       if (response.ok) {
         return {
-          props: {...(await response.json())},
+          props: { ...(await response.json()) },
         };
       }
 
@@ -25,7 +25,7 @@
 
     if (res.ok) {
       return {
-        props: {...(await res.json()), slug },
+        props: { ...(await res.json()), slug },
       };
     }
 

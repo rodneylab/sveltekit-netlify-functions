@@ -5,13 +5,12 @@ Very basic demo of Netlify functions.
 2. Requires latest version of netlify adatper:
 
 ```shell
-pnpm i -D @sveltejs/adapter-netlify@next    
+pnpm i -D @sveltejs/adapter-netlify@next
 ```
 
 3. Requires import of the adapter in `svelte.config.js`
 
 4. Add functions to `netlify/functions/`
-
 
 Test the two functions:
 
