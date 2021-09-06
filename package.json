@@ -2,15 +2,16 @@
   "name": "sveltekit-blog-mdx",
   "version": "0.5.1",
   "scripts": {
-    "dev": "svelte-kit dev --port 3030",
+    "dev": "svelte-kit dev --port 3000",
     "build": "npm run generate:manifest && svelte-kit build",
-    "preview": "svelte-kit preview --port 3030",
+    "preview": "svelte-kit preview --port 3000",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "lint:scss": "stylelint \"src/**/*.{css,scss,svelte}\"",
     "format": "prettier --write --plugin-search-dir=. .",
     "generate:manifest": "node ./generate-manifest.js",
     "generate:sitemap": "node ./generate-sitemap.js",
-    "prettier:check": "prettier --check --plugin-search-dir=. ."
+    "prettier:check": "prettier --check --plugin-search-dir=. .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@fontsource/lato": "^4.5.0",
@@ -26,7 +27,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.0",
     "front-matter": "^4.0.2",
-    "husky": "^7.0.2",
+    "husky": "^7.0.0",
     "mdsvex": "^0.9.8",
     "object-hash": "^2.2.0",
     "prettier": "~2.3.2",
@@ -48,16 +49,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rodneylab/sveltekit-seo"
+    "url": "https://github.com/rodneylab/sveltekit-netlify-functions"
   },
   "bugs": {
-    "url": "https://github.com/rodneylab/sveltekit-seo/issues"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "pnpm run prettier:check && pnpm run lint:scss"
-    }
+    "url": "https://github.com/rodneylab/sveltekit-netlify-functions/issues"
   },
   "type": "module"
 }
