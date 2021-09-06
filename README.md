@@ -1,19 +1,39 @@
-Very basic demo of Netlify functions.
+<img src="./images/rodneylab-github-sveltekit-netlify-functions.png" alt="Rodney Lab sveltekit-netlify-functions Github banner">
 
-1. netlify.toml file gives location of functions, which is `netlify/functions`
+<p align="center">
+  <a aria-label="Open Rodney Lab site" href="https://rodneylab.com" rel="nofollow noopener noreferrer">
+    <img alt="Rodney Lab logo" src="https://rodneylab.com/assets/icon.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  SvelteKit Netlify Functions
+</h1>
 
-2. Requires latest version of netlify adatper:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/258c21cc-4a2c-4add-8b58-42128203863b/deploy-status)](https://app.netlify.com/sites/serene-turing-050367/deploys)
 
-```shell
-pnpm i -D @sveltejs/adapter-netlify@next
+# sveltekit-nextgen-background
+
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-netlify-functions)
+
+SvelteKit demo code for using Netlify Functions with SvelteKit.
+
+See <a href="https://rodneylab.com/using-netlify-functions-sveltekit/">article on using Netlify functions with SvelteKit to chek how to set this up</a>. Drop any questions you have into a comment on that page.
+
+## Building and previewing the site
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+git clone https://github.com/rodneylab/sveltekit-nextgen-background.git my-new-mdsvex-blog
+cd sveltekit-nextgen-background
+pnpm install # or npm install
+pnpm run dev
 ```
 
-3. Requires import of the adapter in `svelte.config.js`
+## Building
 
-4. Add functions to `netlify/functions/`
+```bash
+pnpm run build
+```
 
-Test the two functions:
-
-<a aria-label="Test client I P function" href="https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/client-ip" target="_blank" rel="nofollow noopener noreferrer">https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/client-ip</a>
-
-<a aria-label="Test Good Morning function" href="https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/good-morning" target="_blank" rel="nofollow noopener noreferrer">https://sveltekit-netlify-functions.rodneylab.com/.netlify/functions/good-morning</a>
+> You can preview the built app with `pnpm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
