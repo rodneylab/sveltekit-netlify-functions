@@ -16,6 +16,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^16.0.0",
     "@fontsource/lato": "^4.5.0",
     "@fontsource/lora": "^4.5.1",
     "@fontsource/source-sans-pro": "^4.5.1",
@@ -24,6 +25,7 @@
     "@sveltejs/adapter-netlify": "^1.0.0-next.38",
     "@sveltejs/adapter-static": "^1.0.0-next.26",
     "@sveltejs/kit": "^1.0.0-next.227",
+    "@types/object-hash": "^2.2.1",
     "dayjs": "^1.10.7",
     "dotenv": "^11.0.0",
     "eslint": "^8.6.0",
