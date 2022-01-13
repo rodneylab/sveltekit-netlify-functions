@@ -24,8 +24,8 @@ See <a href="https://rodneylab.com/using-netlify-functions-sveltekit/">article o
 If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-git clone https://github.com/rodneylab/sveltekit-nextgen-background.git my-new-mdsvex-blog
-cd sveltekit-nextgen-background
+git clone https://github.com/rodneylab/sveltekit-netlify-functions.git my-new-mdsvex-blog
+cd sveltekit-netlify-functions
 pnpm install # or npm install
 pnpm run dev
 ```
