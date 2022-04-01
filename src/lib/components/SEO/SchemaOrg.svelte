@@ -20,6 +20,10 @@
   export let telegramUsername;
   export let tiktokUsername;
   export let twitterUsername;
+
+  /**
+   * @type {{ url: string; faviconWidth: number; faviconHeight: number } | null}
+   */
   export let entityMeta = null;
 
   const entityHash = hash({ author }, { algorithm: 'md5' });
