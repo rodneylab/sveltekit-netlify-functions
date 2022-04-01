@@ -2,7 +2,12 @@
   import hash from 'object-hash';
   export let article = false;
   export let author;
+
+  /**
+   * @type {{ name: string; slug: string }[]}
+   */
   export let breadcrumbs;
+
   export let datePublished;
   export let entity;
   export let lastUpdated;
