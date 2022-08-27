@@ -2,7 +2,6 @@
 import adapter from '@sveltejs/adapter-netlify';
 import { mdsvex } from 'mdsvex';
 import preprocess from 'svelte-preprocess';
-import { imagetools } from 'vite-imagetools';
 
 const config = {
   extensions: ['.svelte', '.md', '.svelte.md'],
@@ -18,12 +17,6 @@ const config = {
     adapter: adapter(),
     files: {
       hooks: 'src/hooks',
-    },
-    vite: {
-      define: {
-        'process.env.VITE_BUILD_TIME': JSON.stringify(new Date().toISOString()),
-      },
-      plugins: [imagetools({ force: true })],
     },
   },
 };
