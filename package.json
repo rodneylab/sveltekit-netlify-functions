@@ -5,15 +5,13 @@
 	"description": "Using Netlify Functions with SvelteKit: learn how you can continue using your existing Netlify functions when you move your site to SvelteKit.",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "npm run generate:manifest && vite build",
+		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check --fail-on-hints",
 		"check:watch": "svelte-check --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"lint:scss": "stylelint \"src/**/*.{css,scss,svelte}\"",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"generate:manifest": "node ./generate-manifest.js",
-		"generate:sitemap": "node ./generate-sitemap.js",
 		"prettier:check": "prettier --check --plugin-search-dir=. .",
 		"prepare": "husky install"
 	},
