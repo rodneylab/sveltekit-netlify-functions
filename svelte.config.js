@@ -15,9 +15,6 @@ const config = {
 	],
 	kit: {
 		adapter: adapter(),
-		files: {
-			hooks: 'src/hooks',
-		},
 	},
 };
 
