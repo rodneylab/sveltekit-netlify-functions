@@ -8,9 +8,11 @@
 	import SEO from '$lib/components/SEO/index.svelte';
 	import website from '$lib/config/website';
 
+	/** @type {import('./$types').PageData} */
 	export let data;
-	const { posts } = data;
-
+	let { posts } = data;
+	$: ({posts} = data);
+	
 	const { author, siteUrl } = website;
 
 	let title = 'Home';

@@ -56,7 +56,6 @@ const directives = {
 	'worker-src': ["'self'"],
 	// remove report-to & report-uri if you do not want to use Sentry reporting
 	'report-to': ["'csp-endpoint'"],
-	'report-to': ["'csp-endpoint'"],
 	'report-uri': [
 		`https://sentry.io/api/${PUBLIC_SENTRY_PROJECT_ID}/security/?sentry_key=${PUBLIC_SENTRY_KEY}`,
 	],
@@ -87,9 +86,7 @@ export async function handle({ event, resolve }) {
 	);
 	response.headers.set(
 		'Report-To',
-		`{group: "csp-endpoint", "max_age": 10886400, "endpoints": [{"url": "https://sentry.io/api/${
-			import.meta.env.VITE_SENTRY_PROJECT_ID
-		}/security/?sentry_key=${import.meta.env.VITE_SENTRY_KEY}"}]}`,
+		`{group: "csp-endpoint", "max_age": 10886400, "endpoints": [{"url": "https://sentry.io/api/${PUBLIC_SENTRY_PROJECT_ID}/security/?sentry_key=${PUBLIC_SENTRY_KEY}"}]}`,
 	);
 	return response;
 }

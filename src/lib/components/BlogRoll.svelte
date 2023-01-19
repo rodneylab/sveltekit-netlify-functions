@@ -5,7 +5,7 @@
 	export let initialPosts = 4;
 	export let posts;
 
-	const postCount = posts.length;
+	let postCount = posts.length;
 	$: showPosts = initialPosts;
 	$: displayPosts = posts.slice(0, showPosts);
 

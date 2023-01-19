@@ -19,7 +19,6 @@ specifiers:
   eslint-plugin-svelte3: ^4.0.0
   front-matter: ^4.0.2
   husky: ^8.0.3
-  leaflet: ^1.9.3
   mdsvex: ^0.10.6
   netlify-cli: ^12.7.2
   object-hash: ^3.0.0
@@ -62,7 +61,6 @@ devDependencies:
   eslint-plugin-svelte3: 4.0.0_tmo5zkisvhu6htudosk5k7m6pu
   front-matter: 4.0.2
   husky: 8.0.3
-  leaflet: 1.9.3
   mdsvex: 0.10.6_svelte@3.55.1
   netlify-cli: 12.7.2_@types+node@18.11.18
   object-hash: 3.0.0
@@ -6295,10 +6293,6 @@ packages:
     engines: {node: '>= 0.6.3'}
     dependencies:
       readable-stream: 2.3.7
-    dev: true
-
-  /leaflet/1.9.3:
-    resolution: {integrity: sha512-iB2cR9vAkDOu5l3HAay2obcUHZ7xwUBBjph8+PGtmW/2lYhbLizWtG7nTeYht36WfOslixQF9D/uSIzhZgGMfQ==}
     dev: true
 
   /leven/3.1.0:
