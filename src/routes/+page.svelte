@@ -11,8 +11,8 @@
 	/** @type {import('./$types').PageData} */
 	export let data;
 	let { posts } = data;
-	$: ({posts} = data);
-	
+	$: ({ posts } = data);
+
 	const { author, siteUrl } = website;
 
 	let title = 'Home';
