@@ -1,5 +1,6 @@
 <script>
 	import website from '$lib/config/website';
+
 	const { themeColor } = website;
 </script>
 
